@@ -1,0 +1,26 @@
+#scrollToTopButton {
+    display: none; /* Initially hide the button */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--brown-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #scrollToTopButton:hover {
+    background-color: #fdbe01b7;
+  }
+  
+  #scrollToTopButton.active {
+    display: block; /* Show the button when active */
+  }
+  
+  

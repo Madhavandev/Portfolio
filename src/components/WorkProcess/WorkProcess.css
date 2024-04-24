@@ -1,0 +1,54 @@
+.workprocess-list{
+    row-gap: 3rem;
+    padding-top: 4rem;
+}
+.workprocess-item{
+    text-align: left;
+    padding: 2.8rem;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    transition: var(--transition);
+}
+.workprocess-item:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.workprocess-item-title{
+    align-items: center;
+    justify-content: center;
+}
+.workprocess-item-title span:first-child{
+    font-size: 45px;
+    margin-right: 1.6rem;
+}
+.work-process-widget{
+    padding: 5%;
+}
+@media screen and (max-width: 410px){
+    .workprocess-item-title span:first-child{
+        font-size: 35px;
+        margin-right: 0.10rem;
+    }
+    .work-process-widget{
+        padding: 3%;
+    }
+}
+@media screen and (max-width:384px){
+    .workprocess-item-title span:first-child{
+        font-size: 30px;
+        margin-right: 0.8rem;
+    }
+    .work-process-widget{
+        padding: 1%;
+    }
+}
+@media screen and (min-width: 760px){
+    .workprocess-list{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .workprocess-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
